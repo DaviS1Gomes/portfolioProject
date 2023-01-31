@@ -1,8 +1,43 @@
+:root{
+    --primary-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
 body * {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main-bg{
+    background: url(../img/main-bg.svg) no-repeat center center/cover;
+    color: var(--white-color);
+}
+
+.white-bg{
+    background-color: var(--white-color);
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+}   
+
+.section-size{
+    min-height: 100vh;
 }

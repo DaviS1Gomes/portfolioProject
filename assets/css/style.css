@@ -193,6 +193,57 @@ a {
     font-size: 4rem;
 }
 
+.biograph-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100rem;
+    flex-flow: column nowrap;
+    gap: 10rem;
+}
+
+.biograph-container h2{
+    font-size: 5rem;
+    text-align: center;
+}
+.biograph-description{
+    display: flex;
+    align-items: center;
+    gap: var(--gap); 
+    background-color: #EEEEEE;
+    color: var(--primary-color);
+}
+.biograph-description p{
+   padding: 5.5rem;
+}
+
+
+.rede-sociais{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    width: 20rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.rede-sociais h2{
+    font-size: 2.2rem;
+}
+.sociais-image a img{
+    max-width: 25rem;
+    transition: all 300ms;
+
+}
+
+.sociais-image a img:hover{
+    transform: scale(1.05);
+    transition: all 300ms;
+}
+
 .languages-content {
     display: flex;
     flex-flow: column wrap;

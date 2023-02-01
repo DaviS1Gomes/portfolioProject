@@ -119,7 +119,7 @@ a {
     gap: var(--gap);
     height: 100vh;
 }
-.intro-text-content {
+.intro-text-content, .intro-img {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -145,4 +145,9 @@ a {
     font-size: inherit;
     font-family: inherit;
     color: var(--purple-color);
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
 }

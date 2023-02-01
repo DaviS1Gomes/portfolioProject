@@ -197,7 +197,7 @@ a {
     display: flex;
     justify-content: center;
     height: 100vh;
-    max-width: 100rem;
+    max-width: 130rem;
     flex-flow: column nowrap;
     gap: 10rem;
 }
@@ -212,9 +212,21 @@ a {
     gap: var(--gap); 
     background-color: #EEEEEE;
     color: var(--primary-color);
+    padding: 1.5rem 3rem;
+    box-shadow: 5px 5px 1px var(--purple-color);
 }
 .biograph-description p{
-   padding: 5.5rem;
+    border: var(--primary-color) 5px solid;
+    padding: 2.5rem;
+    background-color: var(--light-gray-color);
+    box-shadow: 5px 5px 1px var(--purple-color);
+}
+
+.logo-davi {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 0.5rem var(--primary-color) solid;
+    box-shadow: 0.1rem 0.1rem 4rem hsla(300,100%,50%, 0.2);
 }
 
 
@@ -225,9 +237,10 @@ a {
     flex-wrap: nowrap;
     background-color: var(--white-color);
     color: var(--primary-color);
-    width: 20rem;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem 3rem;
+    box-shadow: 5px 5px 1px black;
+
 }
 
 .rede-sociais h2{

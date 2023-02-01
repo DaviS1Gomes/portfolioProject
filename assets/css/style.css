@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #000000;
+    --primary-color: #460046;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
     --purple-color: #FF00FF;
@@ -15,6 +15,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body * {
@@ -43,6 +44,7 @@ a {
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
+    padding: 8rem var(--gap);
 }   
 
 .section-size{
@@ -147,7 +149,108 @@ a {
     color: var(--purple-color);
 }
 
-.intro-img img{
+.intro-img img, .intro-img svg{
     max-width: 100%;
     height: auto;
+}
+
+.curriculum-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    max-width: 64rem;
+    flex-flow: column nowrap;
+    gap: 10rem;
+}
+
+.buttons-curriculum{
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+}
+.buttons-curriculum button{
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    transition: all 300ms;
+    box-shadow: 0rem 0.2rem 0.1rem black;
+}
+
+.buttons-curriculum button:hover{
+    cursor: pointer;
+    background-color: var(--purple-color);
+    transform: translateY(-0.5rem);
+    transition: all 300ms;
+}
+
+.curriculum-container h2 {
+    font-size: 4rem;
+}
+
+.languages-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    max-width: 80rem;
+    align-items: center;
+}
+
+.skills{
+    margin-bottom: 5rem;
+}
+
+.languages-content h2{
+    font-size: 6rem;
+    color: #460046;
+}
+.logo img {
+    width: 7.5rem;
+}
+.logo-images {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.logo div progress{
+    background-color: var(--white-color);
+    border: 0.3rem solid #460046;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+
+.logo div progress::-webkit-progress-bar{
+    background-color: var(--white-color);
+}
+
+.logo div progress::-webkit-progress-value{
+    background-color: var(--purple-color);
+}
+
+.logo div h2{
+ font-size: 2rem;
+ font-family: 'Open Sans', sans-serif;
+ text-transform: none;
+}
+
+.cat-bg {
+    background: url(../img/cat-bg.svg) right bottom no-repeat;
+    color: var(--primary-color);
 }

@@ -319,6 +319,64 @@ a {
     color: var(--primary-color);
 }
 
+.gallery{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+.gallery h2{
+    font-size: 4rem;
+}
+
+.container-gallery {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--light-gray-color);
+    align-items: center;
+    gap: var(--gap);
+    width: 90rem;
+    padding: 3rem 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 1px var(--purple-color);
+}
+
+.container-gallery img{
+    width: 75rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.4rem 1rem var(--purple-color);
+}
+.container-links{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.container-links a{
+    padding: 1rem 2rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem var(--purple-color);
+    border: solid 0.1rem var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+.container-links a:hover{ 
+    transition: all 300ms ease-in-out;
+    color: var(--light-gray-color);
+    background-color: var(--primary-color);
+    transform: translateY(-0.2rem);
+}
+
+
+
+.container-links img {
+    box-shadow: none;
+    width: 5rem;
+}
+
 .contact-bg{
     background: url(../img/contact.svg) right bottom no-repeat;
     color: var(--primary-color);

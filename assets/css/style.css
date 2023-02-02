@@ -347,13 +347,14 @@ a {
 }
 
 .container-gallery img{
-    max-width:75rem;
+    max-width: 80rem;
     border-radius: 1rem;
     box-shadow: 0.1rem 0.4rem 1rem var(--purple-color);
 }
 
 .container-image{
     position: relative;
+    padding: 0rem 5rem;
 }
 .hover-tecnologias {
     display: flex;
@@ -361,7 +362,7 @@ a {
     position: absolute;
     justify-content: center;
     background-color:var(--light-gray-color);
-    width: 100%;
+    width: 89%;
     height: 98%;
     border-radius: 1rem;
     opacity: 0;
